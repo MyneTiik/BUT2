@@ -19,4 +19,13 @@ L'objectif est de créer un environnement de travail structuré et efficace pour
 
 ---
 
-💡 **N'hésitez pas à explorer, commenter, et contribuer si vous le souhaitez !**
+💡 **N'hésitez pas à explorer, commenter, et contribuer si vous le souhaitez :D**
+
+
+**Cybersécurité :**
+
+	 -[R308 POO](R308%20POO.md)
+
+**ROM : **
+
+	-[R305 Chaînes de transmission numériques](R305%20Chaînes%20de%20transmission%20numériques.md)
