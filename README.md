@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌟 Bienvenue dans la branche pour le BUT2 R&T🌟
 
 Cette branche GitHub est dédiée à mon espace **Obsidian**, conçu pour organiser et centraliser toutes les notes et ressources de mes cours en **BUT2**.
@@ -29,3 +30,6 @@ L'objectif est de créer un environnement de travail structuré et efficace pour
 **ROM : **
 
 	-[R305 Chaînes de transmission numériques](R305%20Chaînes%20de%20transmission%20numériques.md)
+=======
+
+>>>>>>> origin/main
