@@ -6,25 +6,12 @@ class Node:
         self.data = data 
         self.next = None
         
-    def printNode(self):
+    def printNode(self): #récursif, permet d'afficher chaque elmt de la liste chainée
         print(self.data, end= " ")
         if self.next is not None:
-            self.next.printNode()
-            
-    """ def __init__(self, value):
-        self.left = None
-        self.right = None
-        self.data = value """
+            self.next.printNode() #appel recursif sur le prochain terme
     
-    #def printNodeRecRev(self, liste=[]):
-    #    if self.next is not None:
-    #        liste.append(self.data)
-    #        self.next.printNodeRecRev(liste)
-    #    else:
-    #        liste.append(self.data)
-    #        print(liste.reverse())
-    
-    def printNodeRecRev(self):
+    def printNodeRecRev(self): # comment ça marche ? on parcours toute la liste chainee puis on resoud/affiche chaque terme, on a donc parcouru la liste a l'envers
         if self.next is not None:
             self.next.printNodeRecRev()
         return self.data
@@ -40,16 +27,10 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head = None
-        
-    """ def printList(self):
-        current = self.head
-        while current is not None:
-            print(current.data, end=" ")
-            current = current.next """
 
     def printListRec(self):
         if self.head is not None:
-            self.head.printNode()
+            self.head.printNode() #appel de la fonction de la classe Node
         else:
             print("liste vide")
     
