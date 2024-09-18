@@ -76,6 +76,7 @@ class Employe(Personne): # Constructeur
 *Ici on cherche a utiliser les fonction de la classe `Personne()` dans la classe `Employe()`, on ajoute dans le `__init__` de la classe  `Employe()` qui s'additionne au  `__init__` de `Personne()` pour ajouter un nouvel attribut.*
 
 [Sujet 3 de TP/TD](codes/sujet3.py)
+[Sujet 3Bis de TP/TD](codes/sujet3bis.py)
 
 ---
 ### **Le Polymorphisme**
