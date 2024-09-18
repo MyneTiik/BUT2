@@ -46,14 +46,27 @@ Copier le code
 #### Exemple :
 
 ```python
-class Véhicule:     
-	def __init__(self, marque):         
-		self.marque = marque  class Moto(Véhicule):     
+class Personne(): # Constructeur 
+	def __init__(self, nom, prenom): 
+		self.nom = nom 
+		self.prenom = prenom 
 		
-	def rouler(self):         
-		print(f"La moto {self.marque} roule.")`
+	def afficher(self): 
+		print("Nom : ",self.nom) 
+		print("Prénom : ",self.prenom) 
+		
+class Employe(Personne): # Constructeur 
+	
+	def __init__(self, nom, prenom, job): # appel du constructeur de la classe mère (Personne) 
+		Personne.__init__(self, nom, prenom) # ajout d'un attribut 
+	
+	self.job = job 
+	
+	def afficher(self): 
+		Personne.afficher(self) print("Job : ",self.job)
 ```
 
+####Ici on cherche a utiliser les fonction de la classe `Personne()` dans la classe `Employe()`, on ajoute dans le `__init__` de la classe  `Employe()`  
 
 ---
 
