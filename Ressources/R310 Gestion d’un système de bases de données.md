@@ -114,7 +114,7 @@ Plus précisément, ça prend les 4 caractères avant la fin du titre (length - 
 
 *Pour chaque document dans la collection movies, cette ligne de code met à jour le champ release_date en prenant les 4 derniers caractères du champ title (potentiellement l'année) et les stocke dans release_date.*
 
-# **TD 2:
+# **TD 2:**
 
 ### **Question 1:**
 
