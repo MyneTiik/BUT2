@@ -98,14 +98,14 @@ class Chat(Animal):
 	def parler(self):         
 		print("Le chat miaule.")  
 		
-def faire_parler(animal):     
-	animal.parler()  
+def faire_parler(animal_var):     
+	animal_var.parler()  
 	
 faire_parler(Chien())  # Le chien aboie 
 faire_parler(Chat())   # Le chat miaule
 ```
 
-*Ici *
+*Ici on ré-utilise la classe `Animal()` avec l'héritage comme vu précédemment.  En utilisant la fonction `faire_parler` on appelle la classe `Chat()` ou `Chien()` qui eux même appellent la classe `Animal()`*
 
 [Sujet 5 de TP/TD](codes/sujet5.py)
 
