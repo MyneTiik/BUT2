@@ -117,3 +117,81 @@ Quand un canal se comporte comme un passe-bas, les impulsions s’élargissent e
 - Si le bruit devient trop important, les niveaux deviennent indiscernables, l'œil se ferme.
 
 
+## III. Notions de rapidité de modulation : Critère de Nyquist
+
+La bande passante du canal limite la rapidité de modulation `R` (en baud ou symboles par seconde). Selon Nyquist :
+
+1. `R ≤ 2 × BP` (premier critère, difficile en milieu bruité)
+2. `R ≤ BP` (deuxième critère, plus facile)
+3. `R ≈ 1,25 × BP` (critère pratique)
+
+### Exemple : Application à l’ADSL
+- Bande passante d’une ligne téléphonique : 1,1 MHz  
+- Utilisation pour la voix et les données.
+
+## IV. Utilisation des codages multi-symboles
+
+### IV.1 Qu’est-ce qu’un symbole ?
+
+Le **débit des symboles** `M` est défini par :
+
+M = 1/Ts
+
+`Ts` : durée d’un symbole. La rapidité de modulation correspond au débit maximal des symboles dans une bande passante donnée, mais pas au débit binaire.
+
+#### Exemple : Codage NRZ
+
+- "1" : +A
+- "0" : -A
+
+Le signal présente 2 symboles (±A), chaque symbole codant 1 bit. La largeur de bande dépend uniquement du débit des symboles :
+
+Lb = M
+
+### IV.2 Utilisation d’un codage multi-symbole pour augmenter le débit binaire
+
+Avec le codage **2B1Q** (4 symboles), chaque symbole code 2 bits, doublant ainsi le débit binaire pour une même largeur de bande.
+
+### IV.3 Utilisation d’un codage multi-symbole pour diminuer la largeur de spectre
+
+Pour un débit binaire constant, le codage 2B1Q divise par deux la largeur de bande par rapport au codage NRZ.
+
+### IV.4 Valence d’un signal
+
+La **valence** `v` correspond au nombre d’états significatifs (niveaux ou symboles) que peut prendre le signal :
+
+v = 2 pour NRZ v = 4 pour 2B1Q
+
+Le débit binaire `D` s’exprime par la formule suivante :
+D = M × log2(v)
+
+
+### IV.5 Conclusion
+
+Pour un canal à bande passante limitée :
+- On peut augmenter le débit binaire en augmentant la valence tout en maintenant constant le débit des symboles (et donc la largeur de bande).
+- On peut diminuer la largeur de bande en augmentant la valence tout en gardant le débit binaire constant.
+
+Toutefois, on ne peut pas augmenter indéfiniment la valence, car les niveaux deviennent difficilement discernables en présence de bruit.
+
+## V. Transmission en milieu bruité
+
+### V.1 Prise en compte du bruit
+
+Le rapport signal/bruit (S/N) mesure la qualité d’un canal vis-à-vis du bruit :
+
+[S/N]dB = 10 × log(PS/PN)
+
+### V.2 Capacité d’un canal bruité, relation de Shannon
+
+Shannon a établi que dans un canal bruité, le nombre maximal d’états discernables `vn` est donné par :
+
+vn = 1 + PS/PN
+
+D’où la **capacité** d’un canal (débit binaire maximal) :
+
+C = BP × log2(1 + PS/PN)
+
+
+---
+**Fin du chapitre 2 – Concepts fondamentaux pour les transmissions numériques.**
