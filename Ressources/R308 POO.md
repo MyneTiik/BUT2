@@ -1,5 +1,5 @@
 
-### **PDF de Cours**
+#### **PDF de Cours**
 - [R308-MM-2024](pdf/R308-MM-2024.pdf)
 
 ### **Introduction à la POO**
@@ -50,7 +50,7 @@ class Point: #Définition d'un point
 - **Définition** : L'héritage permet de créer de nouvelles classes basées sur des classes existantes.
 - **Avantages** : Réutilisation et extension des fonctionnalités existantes.
 
-#### Exemple :
+### Exemple d'Héritage :
 
 ```python
 class Personne(): # Constructeur 
