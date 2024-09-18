@@ -122,6 +122,30 @@ class LinkedList:
                     liste_finale.addInTail(current2.data)
                     current2 = current2.next
         return liste_finale
+    
+    def heads(self, N):
+        current = self.head
+        for i in range(0, N):
+            if current is not None:
+                print(current.data, end= " ")
+                current = current.next
+    
+    def tails(self, N):
+        current = self.head
+        longueur = 0
+        while current is not None:
+            longueur += 1
+            current = current.next
+        if N > longueur:
+            N = longueur
+        current = self.head
+        for i in range(longueur - N):
+            current = current.next
+        
+        while current is not None:
+            print(current.data, end= " ")
+            current = current.next
+        
         
    
 
@@ -194,6 +218,13 @@ def main():
     reverselist = myLinkedList.reverseList()
     reverselist.printListRec()
     
+    print("\n")
+    print("Les N heads éléments de la liste sont:")
+    myLinkedList.heads(2)
+    
+    print("\n")
+    print("Les N tails éléments de la liste sont:")
+    myLinkedList.tails(2)
     
     
 main()
