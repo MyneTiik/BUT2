@@ -86,7 +86,7 @@ La cadence d’émission est régie par une horloge `He` de fréquence `fe`.
 
 
 - `TB` : Durée d'un bit [en bits/s]  
-- `BT` : Bande passante du canal  
+- `Lb` : Bande passante du canal  
 
 ## II. Limitation du débit
 
