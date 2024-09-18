@@ -3,7 +3,6 @@ cours :
 
 - [R308-MM-2024](pdf/R308-MM-2024.pdf)
 
-
 ### **Introduction à la POO**
 
 - **Définition** : La programmation orientée objet est un paradigme qui organise le code en objets plutôt qu’en fonctions.
@@ -43,7 +42,7 @@ class Point: #Définition d'un point
     - `self` représente l'instance courante de l'objet.
     - `deplacer` est une méthode qui simule le déplacement du point.
 
-[Sujet 2 de TP/TD](/codes/sujet2.py)
+[Sujet 2 de TP/TD](codes/sujet2.py)
 
 ---
 
