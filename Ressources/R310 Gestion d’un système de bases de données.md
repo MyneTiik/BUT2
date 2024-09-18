@@ -1,21 +1,21 @@
 
 [Installer MongoDB sur linux](https://linux.how2shout.com/how-to-install-mongodb-6-0-server-on-ubuntu-22-04/) 
 
-``$ sudo systemctl start (/status) mongod
+`$ sudo systemctl start (/status) mongod`
 
 Connexion à MongoSH : 
 
-``$ mongosh -u "root" -p "azerty" --authenticationDatabase "admin"
+`$ mongosh -u "root" -p "azerty" --authenticationDatabase "admin"`
 
 ### **Vérifier le statut de MongoDB : **
 
-``$ sudo systemctl status mongod
+``$ sudo systemctl status mongod``
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdaPmMeqkZBCHWv7NeoXs2ei_PBqQIY1HNLnYoR821MYDvKVAV1uxpC8qujOYRXXjFKh_aPtWIsYw1fslrk3DO8G1vaJmYt5KcKrkwuD317WumHC_tcX1UD2ZhiqXJ3RmFCw_YR5RJl9bYt6XhlcdY4Ljk?key=iAVe7TE_kzSEuRWw_w-lIw)
 
 ### **Créer la base :
 
-``test> use tp
+``test> use tp``
 #### **Importer le json :
 
 ``$ mongoimport --host "localhost:27017" --username "root" --password "azerty" --authenticationDatabase "admin" --collection "movies" --db "tp1" --file movies.json
