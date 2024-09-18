@@ -42,7 +42,7 @@ class Point: #Définition d'un point
     - `self` représente l'instance courante de l'objet.
     - `deplacer` est une méthode qui simule le déplacement du point.
 
-
+[Sujet 2 de TP/TD](/codes/sujet2.py)
 
 ---
 
