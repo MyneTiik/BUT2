@@ -121,9 +121,9 @@ Quand un canal se comporte comme un passe-bas, les impulsions s’élargissent e
 
 La bande passante du canal limite la rapidité de modulation `R` (en baud ou symboles par seconde). Selon Nyquist :
 
-1. `R ≤ 2 × BP` (premier critère, difficile en milieu bruité)
-2. `R ≤ BP` (deuxième critère, plus facile)
-3. `R ≈ 1,25 × BP` (critère pratique)
+1. `R ≤ 2 × Lb` (premier critère, difficile en milieu bruité)
+2. `R ≤ Lb` (deuxième critère, plus facile)
+3. `R ≈ 1,25 × Lb` (critère pratique)
 
 ### Exemple : Application à l’ADSL
 - Bande passante d’une ligne téléphonique : 1,1 MHz  
@@ -164,8 +164,7 @@ v = 2 pour NRZ v = 4 pour 2B1Q
 
 Le débit binaire `D` s’exprime par la formule suivante :
 D = M × log2(v)
-
-
+   
 ### IV.5 Conclusion
 
 Pour un canal à bande passante limitée :
