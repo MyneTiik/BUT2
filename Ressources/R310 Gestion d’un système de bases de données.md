@@ -18,17 +18,17 @@ Connexion à MongoSH : 
 ``test> use tp``
 #### **Importer le json :
 
-``$ mongoimport --host "localhost:27017" --username "root" --password "azerty" --authenticationDatabase "admin" --collection "movies" --db "tp1" --file movies.json
+``$ mongoimport --host "localhost:27017" --username "root" --password "azerty" --authenticationDatabase "admin" --collection "movies" --db "tp1" --file movies.json``
 
 (il a fallu enlever le --jsonArray car le format ne correspondait pas)
 
-``tp1> show collections
+``tp1> show collections``
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdA0v4l9N-o4X3mku9i-3fTo-0oforqGdBag7w4ytKLaaMm0o8EgHPf0Qy8vkScF4rE_o3_wGOcqufUAl5bVLMgToyix64ZFHQIyR7JY2_vm8IAh_xhbnFJipBCqnvljnUmaBdiqFBvbp_nrt2XPnph-A1U?key=iAVe7TE_kzSEuRWw_w-lIw)
 
 ### **Vérifier l’importation :
 
-``tp1> db.movies.find()
+``tp1> db.movies.find()``
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdMicuA77dlOF-s1kfnl7BZF_IUajquivP5EKodU2NdARcivRfdWDmCGkJazV1RF9xw2Z0a8027hPj989mZNoC_DlcStFYPU1FykM9TWXUag--ddTrwGem9EubSpkj5BC8y_HAMeSgekEMRfyrdfGNYuyk?key=iAVe7TE_kzSEuRWw_w-lIw)
 
