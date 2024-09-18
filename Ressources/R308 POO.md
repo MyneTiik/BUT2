@@ -1,5 +1,5 @@
 
-###**PDF de Cours**
+### **PDF de Cours**
 - [R308-MM-2024](pdf/R308-MM-2024.pdf)
 
 ### **Introduction à la POO**
@@ -78,21 +78,36 @@ class Employe(Personne): # Constructeur
 [Sujet 3 de TP/TD](codes/sujet3.py)
 
 ---
-###* Le Polymorphisme
+### **Le Polymorphisme**
 
 Le **polymorphisme** permet d'utiliser des méthodes de même nom sur des objets de différentes classes, chaque classe pouvant avoir sa propre implémentation de la méthode.
 
 ### Exemple de Polymorphisme :
 
-python
 
-Copier le code
+```python
+class Animal:     
+	def parler(self):         
+		pass  
+		
+class Chien(Animal):     
+	def parler(self):         
+		print("Le chien aboie.")  
+		
+class Chat(Animal):     
+	def parler(self):         
+		print("Le chat miaule.")  
+		
+def faire_parler(animal):     
+	animal.parler()  
+	
+faire_parler(Chien())  # Le chien aboie 
+faire_parler(Chat())   # Le chat miaule
+```
 
-`class Animal:     def parler(self):         pass  class Chien(Animal):     def parler(self):         print("Le chien aboie.")  class Chat(Animal):     def parler(self):         print("Le chat miaule.")  def faire_parler(animal):     animal.parler()  faire_parler(Chien())  # Le chien aboie faire_parler(Chat())   # Le chat miaule`
+*Ici *
 
-### Explication :
-
-- La méthode `parler` est définie différemment dans les classes `Chien` et `Chat`, mais elles partagent la même interface.
+[Sujet 5 de TP/TD](codes/sujet5.py)
 
 ---
 ### **Avantages de la POO en Python**
