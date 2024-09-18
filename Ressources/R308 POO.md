@@ -25,16 +25,24 @@ cours :
 
 ### **Exemple de Classe en Python**
 
-python
 
-Copier le code
-
-`class Voiture:     def __init__(self, marque, modèle):         self.marque = marque         self.modèle = modèle      def démarrer(self):         print(f"La {self.marque} {self.modèle} démarre.")`
+```python
+class Point: #Définition d'un point
+	def __init__(self,a,b): 
+		self.x = a 
+		self.y = b 
+		
+	def deplacer(self, dx, dy): 
+		self.x = self.x+dx 
+		self.y = self.y+dy
+```
 
 - **Explication** :
     - `__init__` est le constructeur qui initialise l'objet.
     - `self` représente l'instance courante de l'objet.
-    - `démarrer` est une méthode qui simule le démarrage de la voiture.
+    - `deplacer` est une méthode qui simule le déplacement du point.
+
+
 
 ---
 
@@ -66,7 +74,7 @@ class Employe(Personne): # Constructeur
 		Personne.afficher(self) print("Job : ",self.job)
 ```
 
-####Ici on cherche a utiliser les fonction de la classe `Personne()` dans la classe `Employe()`, on ajoute dans le `__init__` de la classe  `Employe()`  
+*Ici on cherche a utiliser les fonction de la classe `Personne()` dans la classe `Employe()`, on ajoute dans le `__init__` de la classe  `Employe()` qui s'additionne au  `__init__` de `Personne()` pour ajouter un nouvel attribut.*
 
 ---
 
