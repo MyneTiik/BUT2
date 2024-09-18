@@ -138,124 +138,51 @@ Cette ligne de code JavaScript utilise MongoDB pour faire des opérations sur un
 
 ### **Question 2:
 
-  
-
-db.td2.distinct("grades.grade")
+``db.td2.distinct("grades.grade")
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXebKHqd4xNZXfHrWJAw5cu3g1SXPWv8j4SfnNJS8jpbCV1N0jzPBR8_5pTIv-nbpVOJsvgI2-lrYrPQU0_1-hJYRRuCz9Q35omEGpcmLKHwwH_hL4pBzwplJsl-ncn9K2etTkztD9BKgO1OugmA4HHAaL6h?key=iAVe7TE_kzSEuRWw_w-lIw)
-
-  
-
 ### **Question 3:
 
-  
-
-db.td2.count({cuisine : "French"})
-
-  
+``db.td2.count({cuisine : "French"})
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXd2B-B8ZCg5vgS1wK9pelBpqerAuHSfTcGdblJkHzjzRgO8ROOKcKS4K2E4sjTwA1y08LrRoCarzjNEd-YciC2oyNJ5brnVclqGbhRmgvUz1jARRJVSHzHGRqbpIoCKfmHa2peQQO1A2ZFZeDmkDUdxaB3X?key=iAVe7TE_kzSEuRWw_w-lIw)
-
-  
-
 ### **Question 4:
 
-  
+``db.td2.count({"address.street": "Central Avenue"})
 
-db.td2.count({"address.street": "Central Avenue"})
-
-  
-
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeR7goYKwztXtfEuTFedl9AD2ElT5CoCkzQClZjo3JmNZbq0tEsCAXsce14HQJemy7X3ye7sAR1VyZNreAQ5u-BkgiqXS_uBaNiEgGsCTMLPua719xtu1LR7t8VvopgdHTDlD1WIBTkJFiiFP1EPIXFe8E?key=iAVe7TE_kzSEuRWw_w-lIw)
-
-  
-
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeR7goYKwztXtfEuTFedl9AD2ElT5CoCkzQClZjo3JmNZbq0tEsCAXsce14HQJemy7X3ye7sAR1VyZNreAQ5u-BkgiqXS_uBaNiEgGsCTMLPua719xtu1LR7t8VvopgdHTDlD1WIBTkJFiiFP1EPIXFe8E?key=iAVe7TE_kzSEuRWw_w-lIw) 
 ### **Question 5:
 
-  
-
-db.td2.count({"grades.score": {$gt : 50}})
-
-  
+``db.td2.count({"grades.score": {$gt : 50}})
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfNytdfV6sVKUlXnouuJxrxwnyIW2Ob8AA3LODuBn9PbcgntXmELF6hpRqix9-9OdrbkdsQpMVIMVzPa83uJq5qi9NOHQvJO8EEOFrPZq2KbxVE1dNm67FSmdzB0pWx_JtQmQt721TVPQ7QskX3ngecsKPV?key=iAVe7TE_kzSEuRWw_w-lIw)
-
-  
-
 ### **Question 6:
 
-  
-
-db.td2.find( {}, { _id: 0, name: 1, "address.building": 1, "address.street": 1})
-
-  
+``db.td2.find( {}, { _id: 0, name: 1, "address.building": 1, "address.street": 1})
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdUC1bF6SVVN0XQbMpJoS-Z9FudEIpjKLt2xgOHRpFmReMoGlg-tVJBf1dJsx-Bv9GyutNem9StpwA51v9crLO5nLrSyyVRdEJ8Gn7XEbhMWIzEaRGhNmIuNZi9lvk1pyewQ6WRUMnN52urJLTmg85kImoM?key=iAVe7TE_kzSEuRWw_w-lIw)
+### **Question 7:
 
-  
-
-Question 7:
-
-  
-
-db.td2.find( {}, { _id: 0, name: "Burger King", "address.borough": 1})
-
-  
+``db.td2.find( {}, { _id: 0, name: "Burger King", "address.borough": 1})
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfrQpovwpa8-K-BEImdh4GMOyW30zpJIydW5UJqBVZwL3rV_Fw7bVi1nq3879fgo_ys4RrmYNgdRVYT_2hGw-FCUWoV-soSCKeZsR81OX5dgBGYDB5pjhdHyVpctPWEAJGlud7FNocOo58JHRWRVHjyK3vj?key=iAVe7TE_kzSEuRWw_w-lIw)
+### **Question 8:
 
-  
-
-Question 8:
-
-  
-
-db.td2.find({"address.street": { $in: ["Union Street", "Union Square"]}},{_id:0 , name: 1, "address.street": 1})
-
-  
+``db.td2.find({"address.street": { $in: ["Union Street", "Union Square"]}},{_id:0 , name: 1, "address.street": 1})
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcw1rCA-21GglLAu38AGBcORVZYrwSH2pRzoKRDgJWlLlsO6DToUWfbM0OEFlfuenQKtDmwFokf3DLrTDF-ygJt3okP2tkcZrQIvJ-TSztExQVqx8BR2-Hu7f6tliSiKkT_sAzVfcYgsJoAxyfdbTYkWGNv?key=iAVe7TE_kzSEuRWw_w-lIw)
+### **Question 9:
 
-  
-
-Question 9:
-
-  
-
-db.td2.find({"address.coord.1": {$gt : 40.90}},{_id: 0, name: 1, "address.coord": 1})
-
-  
+``db.td2.find({"address.coord.1": {$gt : 40.90}},{_id: 0, name: 1, "address.coord": 1})
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeSP9E2ZrzWH5fvGaRKo6rO9vfRyp5AKuWANYXzmeQO4vK5yQsKuciSE6WrX3Wyle9BcCOIriNrlhygbV3iQ51qsUvJyJVVUTxCfDW-Cc46W1lSf9iQ40dCpXSu1H3YgPEjyXdWDT9UUym2zDQyY43iCrXM?key=iAVe7TE_kzSEuRWw_w-lIw)
+### **Question 10:
 
-  
-
-Question 10:
-
-  
-
-db.td2.find({},{_id: 0, name: 1, "grades.grade": 1, "grades.score": 1, "grades.grade" : "A", "grades.score":"0"})
-
-  
+``db.td2.find({},{_id: 0, name: 1, "grades.grade": 1, "grades.score": 1, "grades.grade" : "A", "grades.score":"0"})
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc_160CdWG806dRI4FEgCRtTwh6gz0km9Nw2dIAlhU62lJ4pR05nwCrUP80hGej2urYwzk3zg0dKOQQe3wY_4dzXWUmZFYy4-3IvdVYLzYaHHDwgZV26uWy8UDOL_K6tKND0dWyeQO_1D-rZYjkWOO8MFpW?key=iAVe7TE_kzSEuRWw_w-lIw)
+### **Question Bonus 1:
 
-  
-
-Question Bonus 1:
-
-  
-
-db.td2.find({"address.street": {$regex: /Union/}},{_id: 0, name: 1, "address.street": 1,})
-
-  
+``db.td2.find({"address.street": {$regex: /Union/}},{_id: 0, name: 1, "address.street": 1,})
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc6gv-hKKIyQ0F9GaPBeWym1DSslnXjOh6VAKZo8S7vXZQ_j6OXs61vb-IQZdJz0Khb-Og7U8eRR18eVbWAFM62E0A4PC3MD_rPu9j_HWLrupsEyIXMMj9CCc1uZQAd7-neTflXj6lKSdmdNXDFZYZYhIy3?key=iAVe7TE_kzSEuRWw_w-lIw)
-
-  
-
-Question Bonus 2:
-
-  
-  
-**
