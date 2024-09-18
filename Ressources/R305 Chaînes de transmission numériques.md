@@ -70,3 +70,50 @@ Les distorsions peuvent provenir de :
 - **Gain** : Positif si la puissance en sortie est supérieure à l'entrée (Ps > Pe).
 - **Affaiblissement** : Négatif si Ps < Pe.
 - On utilise les échelles logarithmiques (dB) pour
+
+
+#############
+
+# Chapitre 2 – Concepts fondamentaux pour les transmissions numériques
+
+## I. Définition du débit binaire
+
+On considère une liaison pour laquelle les bits sont codés comme suit :  
+- « 1 » → +A volts  
+- « 0 » → -A volts  
+
+La cadence d’émission est régie par une horloge `He` de fréquence `fe`.  
+
+
+- `TB` : Durée d'un bit [en bits/s]  
+- `BT` : Bande passante du canal  
+
+## II. Limitation du débit
+
+### II.1 Transmission dans un canal parfait
+
+Si le canal est parfait (bande passante infinie, absence de bruit), le signal reçu est identique à celui émis.
+
+0100 1011 Émetteur → Récepteur 0100 1011 Canal parfait
+
+### II.2 Transmission dans un canal à bande passante limitée
+
+Dans un canal à bande passante limitée, celui-ci agit comme un filtre passe-bas, dégradant le signal. L'instant de décision doit être pris quand le signal est interprétable, dans la **plage de décision** `Td`, qui est inférieure à la durée d’un bit `TB`.
+
+### II.3 Interférence inter-symbole
+
+Quand un canal se comporte comme un passe-bas, les impulsions s’élargissent et se superposent, générant une **interférence inter-symbole** (IIS). Si la bande passante est réduite ou si le débit binaire augmente, cette interférence peut rendre les données ininterprétables.
+
+### II.4 Analyse de l’interférence inter-symbole – Effet du bruit – Diagramme de l’œil
+
+#### Signal non bruité
+- Si le signal est au-dessus ou en dessous des seuils, il est interprétable.  
+- Si le signal est dans la zone d'incertitude, il ne peut pas être interprété.
+
+#### Signal légèrement bruité
+- Avec du bruit, la plage de décision se réduit.
+
+#### Signal fortement bruité
+- Si le bruit devient trop important, les niveaux deviennent indiscernables, l'œil se ferme.
+
+
