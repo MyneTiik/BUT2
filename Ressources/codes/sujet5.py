@@ -1,7 +1,10 @@
+#Sert a l'héritage pour définir un fils droit/gauche
 class Node:
     def __init__(self, left=None, right=None):
         self.left = left
         self.right = right
+
+#la constante défini un nombre qui n'a pas besoin d'être calculé
 
 class Constante(Node):
     def __init__(self, value):
@@ -10,6 +13,8 @@ class Constante(Node):
 
     def resolve(self):
         return self.data
+
+# on creer des classes pour chacunes des opérations
 
 class Plus(Node):
     def resolve(self):
@@ -27,9 +32,7 @@ class Divise(Node):
     def resolve(self):
         return self.left.resolve() / self.right.resolve()
 
-# Example usage:
-# Constructing the expression (3 + 5) * (10 - 2)
 root = Moins(Plus(Constante(3), Fois(Constante(2), Constante(6))), Fois(Constante(2), Plus(Constante(4), Constante(9))))
 
 result = root.resolve()
-print(f"Result: {result}")  # Output: Result: 64
+print(f"Result: {result}")
