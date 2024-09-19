@@ -1,5 +1,5 @@
 
-*paradigme fonctionnel : [Sujet 1 de TP/TD](Ressources/sujet1.py)
+*paradigme fonctionnel : [Sujet 1 de TP/TD](Ressources/sujet1.py)*
 #### **PDF de Cours**
 - [R308-MM-2024](pdf/R308-MM-2024.pdf)
 
