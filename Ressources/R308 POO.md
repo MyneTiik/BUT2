@@ -112,7 +112,7 @@ faire_parler(Chat())   # Le chat miaule
 [Sujet 5 de TP/TD](codes/sujet5.py) ou avec commentaire [Sujet 5 avec commentaires](codes/sujet5versionJade.py) (*de rien Jade*)
 
 *Sujet arbres binaires avec opérations*
-[Sujet 5 bis de TP/TD (*aussi appelé sujet 4*)](codes/sujet5bis.py) 
+[Sujet 5 bis de TP/TD)](codes/sujet5bis.py) 
 
 ---
 ### **Avantages de la POO en Python**
