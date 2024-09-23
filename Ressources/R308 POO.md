@@ -13,6 +13,22 @@
 - **Langages supportant la POO** : Java, C++, Python, etc.
 
 ---
+### **Rappel de la récursivité (python)**
+
+La récursivité est un principe essentiel sur python, en effet il permet a une fonction de se rappeler elle-même. La récursivité est très utile dans le cas de la POO. (*d'où ce rappel*) 
+
+### **Exemple de récursivité**
+
+```python
+def while 
+
+
+```
+
+
+
+
+---
 
 ### **Les Concepts de Base de la POO**
 
