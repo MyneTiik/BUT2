@@ -109,7 +109,7 @@ faire_parler(Chat())   # Le chat miaule
 
 *Ici on ré-utilise la classe `Animal()` avec l'héritage comme vu précédemment.  En utilisant la fonction `faire_parler` on appelle la classe `Chat()` ou `Chien()` qui eux même appellent la classe `Animal()`*
 
-[Sujet 5 de TP/TD](codes/sujet5.py) [Sujet 5 bis de TP/TD](codes/sujet5bis.py) 
+[Sujet 5 de TP/TD](codes/sujet5.py) [Sujet 5 bis de TP/TD (*aussi appelé sujet 4*)](codes/sujet5bis.py) 
 
 ---
 ### **Avantages de la POO en Python**
