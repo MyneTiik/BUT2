@@ -52,6 +52,15 @@ class Node:
         else:
             return 1 + max(self.gauche.height(), self.droit.height())
         
+    def countNode(self):
+        if self.gauche is None and self.droit is None:
+            return 1
+        elif self.gauche is None:
+            return 1 + self.droit.countNode()
+        elif self.droit is None:
+            return 1 + self.gauche.countNode()
+        else:
+            return 1 + self.gauche.countNode() + self.droit.countNode()
            
  
 
@@ -156,8 +165,11 @@ def main():
     print(arbre1.find(100))
     
     print("\n")
-    print("Hauteur de l'arbre 1")
+    print("Hauteur de l'arbre 1 \t ->", end=" ")
     print(arbre1.height())
     
+    print("\n")
+    print("Nombre de noeuds dans l'arbre 1 \t ->", end=" ")
+    print(arbre1.countNode())
     
 main()
