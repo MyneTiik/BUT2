@@ -109,6 +109,7 @@ faire_parler(Chat())   # Le chat miaule
 
 *Ici on ré-utilise la classe `Animal()` avec l'héritage comme vu précédemment.  En utilisant la fonction `faire_parler` on appelle la classe `Chat()` ou `Chien()` qui eux même appellent la classe `Animal()`*
 
+*c'est le sujet 4 mais au moment de le faire il s'appelait sujet 5*
 [Sujet 5 de TP/TD](codes/sujet5.py) ou avec commentaire [Sujet 5 avec commentaires](codes/sujet5versionJade.py) (*de rien Jade*)
 
 *Sujet arbres binaires avec opérations*
