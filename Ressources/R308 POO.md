@@ -20,11 +20,16 @@ La récursivité est un principe essentiel sur python, en effet il permet a une 
 ### **Exemple de récursivité**
 
 ```python
-def while 
-
-
+def rec(cpt):
+	while cpt != 3:
+		rec(cpt + 1)
+	print("Valeur atteinte")
+```
+```
+rec
 ```
 
+Ici a l'appel
 
 
 
