@@ -21,17 +21,16 @@ La récursivité est un principe essentiel sur python, en effet il permet a une 
 
 ```python
 def rec(cpt):
-	while cpt != 3:
-		rec(cpt + 1)
-	print("Valeur atteinte")
-```
-```
-rec(0)
+    if cpt == 3:
+        return "FIN"
+    return rec(cpt + 1)
+
+result = rec(0)
+print(result)
 ```
 
-Ici a l'appel de `rec(0)` la fonction commence par regarder si le `cpt` n'est pas égal a 3, si c'est le cas rentre dans la boucle 
 
-
+*Ici a l'appel de la fonction commence par regarder si le `cpt` n'est pas égal a 3, si ce n'est pas le cas alors il s'appel lui même en incrémentant la valeur du compteur au bout de 3 itération le compteur est égal a 3 il n'est pas en accord avec la condition et renvoie `FIN`.*
 
 ---
 
