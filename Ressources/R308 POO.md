@@ -26,10 +26,10 @@ def rec(cpt):
 	print("Valeur atteinte")
 ```
 ```
-rec
+rec(0)
 ```
 
-Ici a l'appel
+Ici a l'appel de `rec(0)` la fonction commence par regarder si le `cpt` n'est pas égal a 3, si c'est le cas rentre dans la boucle 
 
 
 
